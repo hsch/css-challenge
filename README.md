@@ -41,29 +41,39 @@ Generally speaking, and if in doubt, the layout must behave pretty much like the
 - The footer always sticks to the bottom of page.
 - The height of the footer is based on its content, e.g. the font size.
 - Header and footer might have different heights.
+- There is no need to account for potential word wrap.
 - There is a **content block**.
-- The content block consists of an image, and a navigation area.
+- The content block consists of an image, and a navigation bar.
 - The **image** shrinks in width and height as necessary to make things fit,
   and always maintains its aspect ratio.
-- The image never stretches beyond its original size.
-- The image can be of any size and format (landscape, portrait, square),
-  i.e. don't assume the dimensions in the demo are constants.
-- You can assume the page (HTML and inline CSS) to be generated
-  with knowledge of the dimensions of the image,
-  i.e. using constant expressions is permitted
-  as long as they are based on image dimensions only (e.g. not on the window size)
-  and don't require recalculation on window resize.
+- The image never grows beyond its original size.
+- The image file can be of any size and format (landscape, portrait, square),
+  i.e. don't assume the specific dimensions in the demo to be part of the specification.
 - The top of the **navigation bar** always sticks to the bottom of the image,
   but there is a fixed sized margin between them.
-- The height of the navigation bar is based on its content,
-  and it may contain more complex elements than just text
-  e.g. buttons or smaller images acting as buttons.
 - The width of the navigation bar always aligns with the width of the image.
-- The **content area** as a whole (image plus navigation bar) is always centered
+- The height of the navigation bar may be pixel-perfectly hardcoded, if needed,
+  or simply be based on content.
+- The **content block as a whole** (image plus navigation bar) is always centered
   between footer and header, both vertically and horizontally.
-- There is a fixed minimum size margin around the content area.
-- The height of header, footer, and navigation bar can be assumed to be static,
-  i.e. there is no need to account for potential word wrap.
+- There is a minimum fixed size margin around the content block,
+  i.e. on the left and right of it
+  and between content block and header and footer respectively.
+- Neither the image nor the content block ever extend over the header or footer
+  or push them out of the viewport.
+- Header, footer, and navigation bar are proper block elements (e.g. `<div>`)
+  so that they can contain and position child elements.
+
+## Notes
+
+- You don't have to build upon the demo at all.
+  Start from scratch as much as you want to.
+  Solve the challenge however you like.
+- You may assume that the page (HTML and inline CSS) is generated
+  with knowledge of the absolute dimensions of the image file,
+  i.e. using some constant expressions in inline styles is permitted
+  as long as they are based on image dimensions only (e.g. not on the window size)
+  and don't require recalculation on window resize.
 
 ## License
 
