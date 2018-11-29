@@ -7,7 +7,7 @@ according to the requirements below,
 in pure CSS that works in all major modern browsers (Safari, Firefox, Chrome, Edge)
 without Javascript.
 
-The [demo.html]() implements this layout correctly
+The [demo](https://hsch.github.io/css-challenge/) implements this layout correctly
 (tested in Safari, Firefox, Chrome),
 but it does use Javascript.
 
