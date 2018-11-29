@@ -1,0 +1,76 @@
+<style>
+    html, body {
+        margin: 0;
+    }
+    div {
+        text-align: center;
+        font-family: sans-serif;
+    }
+    #page {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #content {
+        flex-grow: 1;
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+    #wrapper {
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        margin: 8px;
+    }
+    #image {
+        display: block;
+        position: absolute;
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #nav {
+        display: none;
+        position: absolute;
+        margin-top: 8px;
+    }
+    .padded {
+        background-color: black;
+        color: white;
+        padding: 8px;
+    }
+</style>
+<body>
+    <div id="page">
+        <div id="header"><div class="padded">HEADER HEADER HEADER</div></div>
+        <div id="content">
+            <div id="wrapper">
+                <img id="image" src="https://via.placeholder.com/480x640.png" />
+                <div id="nav"><div class="padded">NAVIGATION</div></div>
+            </div>
+        </div>
+        <div id="footer"><div class="padded">FOOTER FOOTER FOOTER<br />MORE FOOTER</div></div>
+    </div>
+    <script>
+        wrapper = document.getElementById("wrapper");
+        image = document.getElementById("image");
+        nav = document.getElementById("nav");
+        reposition = function() {
+            nav.style.top = image.offsetTop + image.offsetHeight / 2;
+            nav.style.left = nav.style.right = image.offsetLeft - image.offsetWidth / 2;
+        };
+        window.addEventListener("resize", reposition);
+        image.addEventListener("load", function() {
+            nav.style.display = "unset";
+            wrapper.style.marginBottom = 16 + nav.offsetHeight + "px";
+            reposition();
+        });
+    </script>
+</body>
