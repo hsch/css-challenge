@@ -12,6 +12,9 @@ The [demo](https://hsch.github.io/css-challenge/) implements this layout correct
 but it does use Javascript.
 
 DO create a pull request, if you think you have a solution.
+This repository is licensed under the [WTFPL](http://www.wtfpl.net)
+and by creating a pull request you agree to submitting your work
+under the same license.
 
 DO NOT try to trick the requirements.
 I think the intentions should be clear, please play along.
@@ -57,3 +60,8 @@ This is for a pet project of mine and there are 0 commerial gains involved.
 - There is a fixed minimum size margin around the content area.
 - The height of header, footer, and navigation bar can be assumed to be static,
   e.g. there is no need to account for potential word wrap.
+
+## License
+
+[WTFPL](http://www.wtfpl.net)
+
