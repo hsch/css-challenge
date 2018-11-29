@@ -31,6 +31,7 @@ This is for a pet project of mine and there are 0 commerial gains involved.
 - The **layout** consumes the full page (i.e. all of the viewport),
   but doesn't extend beyond it.
 - There is no scrollbar.
+- The layout always adjusts to a resizing window.
 - There is a **header**.
 - The header always sticks to the top of the page.
 - The height of the header is based on its content, e.g. the font size.
@@ -64,4 +65,3 @@ This is for a pet project of mine and there are 0 commerial gains involved.
 ## License
 
 [WTFPL](http://www.wtfpl.net)
-
