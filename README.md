@@ -31,7 +31,7 @@ This is for a pet project of mine and there are 0 commerial gains involved.
 - The **layout** consumes the full page (i.e. all of the viewport),
   but doesn't extend beyond it.
 - There is no scrollbar.
-- The layout always adjusts to a resizing window.
+- The layout adjusts when the window is resized.
 - There is a **header**.
 - The header always sticks to the top of the page.
 - The height of the header is based on its content, e.g. the font size.
@@ -49,7 +49,8 @@ This is for a pet project of mine and there are 0 commerial gains involved.
 - You can assume the page (HTML and inline CSS) to be generated
   with knowledge of the dimensions of the image,
   i.e. using constant expressions is permitted
-  as long as they don't require recalculation on window resize.
+  as long as they are based on image dimensions only (e.g. not on the window size)
+  and don't require recalculation on window resize.
 - The top of the **navigation bar** always sticks to the bottom of the image,
   but there is a fixed sized margin between them.
 - The height of the navigation bar is based on its content,
