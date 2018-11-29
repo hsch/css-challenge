@@ -5,7 +5,7 @@
 The challenge is to implement a specific layout,
 according to the requirements below,
 in pure CSS that works in all major modern browsers (Safari, Firefox, Chrome, Edge)
-without Javascript.
+without any use of Javascript.
 
 The [demo](https://hsch.github.io/css-challenge/) implements this layout correctly
 (tested in Safari, Firefox, Chrome),
@@ -28,8 +28,10 @@ This is for a pet project of mine and there are 0 commerial gains involved.
 
 ## Requirements
 
+Generally speaking, and if in doubt, the layout must behave pretty much like the [demo](https://hsch.github.io/css-challenge/):
+
 - The **layout** consumes the full page (i.e. all of the viewport),
-  but doesn't extend beyond it.
+  but never extends beyond it.
 - There is no scrollbar.
 - The layout adjusts when the window is resized.
 - There is a **header**.
@@ -43,7 +45,7 @@ This is for a pet project of mine and there are 0 commerial gains involved.
 - The content block consists of an image, and a navigation area.
 - The **image** shrinks in width and height as necessary to make things fit,
   and always maintains its aspect ratio.
-- The image never extends beyond its original size.
+- The image never stretches beyond its original size.
 - The image can be of any size and format (landscape, portrait, square),
   i.e. don't assume the dimensions in the demo are constants.
 - You can assume the page (HTML and inline CSS) to be generated
@@ -61,7 +63,7 @@ This is for a pet project of mine and there are 0 commerial gains involved.
   between footer and header, both vertically and horizontally.
 - There is a fixed minimum size margin around the content area.
 - The height of header, footer, and navigation bar can be assumed to be static,
-  e.g. there is no need to account for potential word wrap.
+  i.e. there is no need to account for potential word wrap.
 
 ## License
 
