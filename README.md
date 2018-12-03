@@ -22,6 +22,28 @@ If you have questions, please create an issue.
 
 DO NOT nit-pick on how the demo is built. :-)
 
+## Why?
+
+I think this is something that _should_ be doable in CSS, but it doesn't seem to be.
+And it's really bothering me that I can't figure it out.
+
+However, even if I can't do it myself, I would still love to see a solution.
+
+The Javascript implementation is good enough from a "business" perspective,
+but it is a bit annoying tech-pride-wise:
+The repositioning of the navigation bar always lags a bit behind
+(I suppose it wouldn't if the browser handled the layout "natively"),
+it is fragile and falls apart e.g. when you rotate your (or: some) devices
+(I guess you could just tweak the event handling more, but then again, we do you even need to?!),
+and it only works when the image has loaded
+(so the event handling needs to account for that, too).
+It just doesn't feel nice and clean.
+
+Anyway, I claim this is impossible to solve.
+
+Prove me wrong. :-)
+
+
 ## Disclaimer
 
 This is for a pet project of mine and there are 0 commerial gains involved.
