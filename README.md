@@ -98,8 +98,9 @@ Generally speaking, and if in doubt, the layout must behave pretty much like the
 - You don't have to build upon the demo at all.
   Start from scratch as much as you want to.
   Solve the challenge however you like.
-- You are free to pick any technical approach from good old table to flexbox,
-  as long as it doesn't require Javascript.
+  You are free to pick any technical approach from good old tables to flexbox,
+  or even use the HTML and CSS parts of an existing framework such as Bootstrap
+  -- as long as the solution works without Javascript.
 - You may assume that the page (HTML and inline CSS) is generated
   with knowledge of the absolute dimensions of the image file,
   i.e. using some constant expressions in inline styles is permitted
