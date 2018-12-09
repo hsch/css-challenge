@@ -66,7 +66,7 @@ Generally speaking, and if in doubt, the layout must behave pretty much like the
 - There is no need to account for potential word wrap.
 - There is a **content block**.
 - The content block consists of an image, and a navigation bar.
-- The **image** shrinks in width and height as necessary to make things fit,
+- The **image** grows and shrinks in width and height as necessary to make things fit,
   and always maintains its aspect ratio.
 - The image is always shown as large as possible,
   without violating the other layout constraints.
