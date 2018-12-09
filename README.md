@@ -90,9 +90,13 @@ Generally speaking, and if in doubt, the layout must behave pretty much like the
 
 ## Notes
 
+- If you think you have a correct solution but it behaves differently from the demo,
+  then you have very likely just found a gap in the acceptance criteria.
 - You don't have to build upon the demo at all.
   Start from scratch as much as you want to.
   Solve the challenge however you like.
+- You are free to pick any technical approach from good old table to flexbox,
+  as long as it doesn't require Javascript.
 - You may assume that the page (HTML and inline CSS) is generated
   with knowledge of the absolute dimensions of the image file,
   i.e. using some constant expressions in inline styles is permitted
