@@ -27,16 +27,14 @@
     }
     #image {
         display: block;
-        xposition: absolute;
-        xwidth: auto;
-        xheight: auto;
-        xmax-width: 100%;
-        xmax-height: 100%;
-        width: 100px;
-        height: 100px;
-        xtop: 50%;
-        xleft: 50%;
-        xtransform: translate(-50%, -50%);
+        position: absolute;
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     #nav {
         display: none;
@@ -48,43 +46,31 @@
         color: white;
         padding: 8px;
     }
-    #nav img {
-        width: 15%;
-        min-width: 64px;
-        max-width: 150px;
-    }
-    #left {
-        float: left;
-    }
-    #right {
-        float: right;
-    }
-    table {
-        height: 100%;
-        position: relative;
-    }
-    td {
-        background-color: cadetblue;
-    }
 </style>
 <body>
-    <div id="page">
-        <div id="header"><div class="padded">HEADER HEADER HEADER</div></div>
-        <div id="content">
-                <table id="wrapper">
-                    <tr>
-                        <td>
-                            <img id="image" src="https://via.placeholder.com/600x800.png" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img id="left" src="https://via.placeholder.com/150x150.png" />
-                            <img id="right" src="https://via.placeholder.com/150x150.png" />
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        <div id="footer"><div class="padded">FOOTER FOOTER FOOTER<br />MORE FOOTER</div></div>
+<div id="page">
+    <div id="header"><div class="padded">HEADER HEADER HEADER</div></div>
+    <div id="content">
+        <div id="wrapper">
+            <img id="image" src="https://via.placeholder.com/480x640.png" />
+            <div id="nav"><div class="padded">NAVIGATION</div></div>
+        </div>
     </div>
+    <div id="footer"><div class="padded">FOOTER FOOTER FOOTER<br />MORE FOOTER</div></div>
+</div>
+<script>
+    wrapper = document.getElementById("wrapper");
+    image = document.getElementById("image");
+    nav = document.getElementById("nav");
+    reposition = function() {
+        nav.style.top = image.offsetTop + image.offsetHeight / 2;
+        nav.style.left = nav.style.right = image.offsetLeft - image.offsetWidth / 2;
+    };
+    window.addEventListener("resize", reposition);
+    image.addEventListener("load", function() {
+        nav.style.display = "unset";
+        wrapper.style.marginBottom = 16 + nav.offsetHeight + "px";
+        reposition();
+    });
+</script>
 </body>
