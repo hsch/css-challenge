@@ -68,7 +68,9 @@ Generally speaking, and if in doubt, the layout must behave pretty much like the
 - The content block consists of an image, and a navigation bar.
 - The **image** shrinks in width and height as necessary to make things fit,
   and always maintains its aspect ratio.
-- The image never grows beyond its original size.
+- The image is always shown as large as possible,
+  without violating the other layout constraints.
+- The image is never shown larger than its maximum, original dimensions.
 - The image file can be of any size and format (landscape, portrait, square),
   i.e. don't assume the specific dimensions in the demo to be part of the specification.
 - The top of the **navigation bar** always sticks to the bottom of the image,
