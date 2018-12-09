@@ -93,8 +93,6 @@ Generally speaking, and if in doubt, the layout must behave pretty much like the
 
 ## Notes
 
-- If you think you have a correct solution but it behaves differently from the demo,
-  then you have very likely just found a gap in the acceptance criteria.
 - You don't have to build upon the demo at all.
   Start from scratch as much as you want to.
   Solve the challenge however you like.
@@ -106,7 +104,9 @@ Generally speaking, and if in doubt, the layout must behave pretty much like the
   i.e. using some constant expressions in inline styles is permitted
   as long as they are based on image dimensions only (e.g. not on the window size)
   and don't require recalculation on window resize.
-
+- If you think you have a correct solution but it behaves differently from the demo,
+  then you have very likely just found a gap in the acceptance criteria.
+  
 ## License
 
 Copyright © 2018
