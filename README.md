@@ -75,8 +75,9 @@ Generally speaking, and if in doubt, the layout must behave pretty much like the
   the whitespace (margin) around the content block will increase.
 - The image file can be of any size and format (landscape, portrait, square),
   i.e. don't assume the specific dimensions in the demo to be part of the specification.
-- The top of the **navigation bar** always sticks to the bottom of the image,
-  but there is a fixed sized margin between them.
+- The top of the **navigation bar** always sticks to the bottom of the image, 
+  i.e. _not_ to the footer.
+- There is a fixed sized margin between image and navigation bar.
 - The width of the navigation bar always aligns with the width of the image.
 - The height of the navigation bar may be pixel-perfectly hardcoded, if needed,
   or simply be based on content.
